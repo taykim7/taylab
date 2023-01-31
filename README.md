@@ -1,4 +1,4 @@
-# vue-project
+# taylab
 
 ## Project setup
 ```
