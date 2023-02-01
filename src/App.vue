@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <LabHeader></LabHeader>
+    <LabBody></LabBody>
+    <LabFooter></LabFooter>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LabHeader from './components/layout/LabHeader.vue'
+import LabBody from './components/layout/LabBody.vue'
+import LabFooter from './components/layout/LabFooter.vue'
 
 export default {
-  name: 'App',
+  data: function(){
+    return {
+      myWeight: ''
+    }
+  },
   components: {
-    HelloWorld
+    'LabHeader': LabHeader,
+    'LabBody': LabBody,
+    'LabFooter': LabFooter
   }
+  
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #f6f6f6;
 }
 </style>
