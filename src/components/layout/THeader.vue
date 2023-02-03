@@ -1,6 +1,6 @@
 <template>
     <div>
-        타이틀
+        TAYLAB 이것저것 실험하기
     </div>
 </template>
 

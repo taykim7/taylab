@@ -1,15 +1,12 @@
 <template>
   <div id="app">
-    <LabHeader></LabHeader>
-    <LabBody></LabBody>
-    <LabFooter></LabFooter>
+    <TMain></TMain>
   </div>
 </template>
 
 <script>
-import LabHeader from './components/layout/LabHeader.vue'
-import LabBody from './components/layout/LabBody.vue'
-import LabFooter from './components/layout/LabFooter.vue'
+import TMain from './components/layout/TMain.vue'
+
 
 export default {
   data: function(){
@@ -18,9 +15,7 @@ export default {
     }
   },
   components: {
-    'LabHeader': LabHeader,
-    'LabBody': LabBody,
-    'LabFooter': LabFooter
+    'TMain' : TMain
   }
   
 }
