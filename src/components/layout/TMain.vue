@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <THeader></THeader>
     <TContents></TContents>
     <TFooter></TFooter>
@@ -11,6 +12,7 @@ import THeader from './THeader.vue'
 import TContents from './TContents.vue'
 import TFooter from './TFooter.vue'
 
+
 export default {
     Data: function(){
     return {
@@ -18,9 +20,9 @@ export default {
     }
   },
   components: {
-    'THeader': THeader,
-    'TContents': TContents,
-    'TFooter': TFooter,
+    THeader,
+    TContents,
+    TFooter,
   }
 }
 </script>
