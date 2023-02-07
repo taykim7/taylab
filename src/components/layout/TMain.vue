@@ -1,6 +1,6 @@
 <template>
   <div>
-    
+    <div>여긴 메인</div>
     <THeader></THeader>
     <TContents></TContents>
     <TFooter></TFooter>
