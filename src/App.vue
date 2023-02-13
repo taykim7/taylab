@@ -1,11 +1,13 @@
 <template>
-  <v-app id="app">
+  <div id="app">
     <TMain></TMain>
-  </v-app>
+    <AuthBtn />
+  </div>
 </template>
 
 <script>
 import TMain from './components/layout/TMain.vue'
+import AuthBtn from './components/AuthBtn.vue';
 
 export default {
   data: function(){
@@ -15,6 +17,7 @@ export default {
   },
   components: {
     TMain,
+    AuthBtn,
   }
   
 }
