@@ -1,34 +1,21 @@
 <template>
   <div>
-    <button @click="signIn">
-      준비
-    </button>
     <button @click="login">
-      시작
+      로그인
     </button></div>
 </template>
 
 <script>
-import { 
-    //GoogleAuthProvider,
-    //signInWithPopup,
-    //getAuth,
-    //signInWithEmailAndPassword,
-} from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '@/plugins/firebase'
 
-//const provider = new GoogleAuthProvider();
 export default  {
     methods: {
-        signIn() {
-            //signInWithPopup(auth, provider)
-            //getAuth(auth)
-        },
         async login() {
           try {
             console.log('성공?')
-            //await signInWithEmailAndPassword(auth, 'th_77@naver.com', '1234')
-            console.log(auth)
+            await signInWithEmailAndPassword(auth, 'th_77@naver.com', '123456')
+            console.log('성공!')
           } catch (error) {
             console.log(error)
           }
